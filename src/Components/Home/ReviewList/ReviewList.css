@@ -1,0 +1,6 @@
+.reviewList{
+    margin: 40px 0;
+    min-height: 120px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+}

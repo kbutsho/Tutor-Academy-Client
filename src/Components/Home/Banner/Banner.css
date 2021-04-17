@@ -1,0 +1,6 @@
+
+.banner-area{
+    height: 90vh;
+    background-image: url('../../../images/banner2.jpg');
+    background-size: cover;
+}

@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* custom */
+.customFont{
+  font-family: 'Lobster', cursive;
+  letter-spacing: '2em';
+}
