@@ -27,7 +27,7 @@ const Footer = () => {
     ]
     return (
         <footer className="footer-area clear-both">
-            <div className="container pt-5">
+            <div className="container">
                 <div className="row py-5">
                     <FooterCol key={1} menuTitle="Services" menuItems={services}/>
                     <FooterCol key={2} menuTitle="Links" menuItems={Links}/>

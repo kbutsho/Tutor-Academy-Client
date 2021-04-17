@@ -1,7 +1,9 @@
-.footer-area{
-    background-image: url('../../../images/footer-bg.png');
+/* .footer-area{
+    background-image: url('../../../images/pic1.jpg');
     background-size: cover;
-}
+    position: relative;
+    z-index: 1;
+} */
 
 .footer-area li{
     padding-bottom: 10px;
