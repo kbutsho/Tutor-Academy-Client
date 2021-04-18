@@ -10,7 +10,7 @@ const MakeAdminForm = () => {
             email: data.email,
         };
         console.log(AdminData);
-        const url = 'http://localhost:5000/addAdmin';
+        const url = 'https://desolate-stream-31459.herokuapp.com/addAdmin';
         fetch(url, {
             method: 'POST',
             headers: {

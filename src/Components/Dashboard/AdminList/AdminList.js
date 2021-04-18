@@ -4,7 +4,7 @@ import SideBar from '../SideBar/SideBar';
 const AdminList = () => {
     const [admins, setAdmins] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/getAdmin")
+        fetch("https://desolate-stream-31459.herokuapp.com/getAdmin")
             .then(res => res.json())
             .then(data => setAdmins(data))
     }, [])

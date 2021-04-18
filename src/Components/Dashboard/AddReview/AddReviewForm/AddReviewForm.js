@@ -31,7 +31,7 @@ const AddReviewForm = () => {
             imageURL: imageURL
         };
         console.log(tutorData);
-        const url = 'http://localhost:5000/addReview';
+        const url = 'https://desolate-stream-31459.herokuapp.com/addReview';
         fetch(url, {
             method: 'POST',
             headers: {

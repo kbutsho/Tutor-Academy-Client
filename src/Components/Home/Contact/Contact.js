@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="section-header text-center text-white mb-5">
                 <h1 className="customFont">Connect with us</h1>
                 <hr style={{ borderTop: '2px dashed red' }} />
-                <div className="col-md-9 mx-auto w-50 col-sm-w-75 mt-4">
+                <div className="col-md-9 mx-auto w-75 col-sm-w-75 mt-4">
                     <form action="mailto:kbutsho@gmail.com" method="post" enctype="text/plain">
                         <div className="form-group">
                             <input type="text" className="form-control" placeholder="Your Name" />

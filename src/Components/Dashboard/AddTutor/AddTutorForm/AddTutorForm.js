@@ -30,7 +30,7 @@ const AddTutorForm = () => {
             imageURL: imageURL
         };
         console.log(tutorData);
-        const url = 'http://localhost:5000/addTutor';
+        const url = 'https://desolate-stream-31459.herokuapp.com/addTutor';
         fetch(url, {
             method: 'POST',
             headers: {

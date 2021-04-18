@@ -15,6 +15,7 @@ import AddReview from './Components/Dashboard/AddReview/AddReview';
 import Order from './Components/Order/Order';
 import OrderList from './Components/Order/OrderList/OrderList';
 import AdminList from './Components/Dashboard/AdminList/AdminList';
+import ServiceList from './Components/Dashboard/ServiceList/ServiceList';
 export const UserContext = createContext();
 
 const App = () => {
@@ -34,6 +35,9 @@ const App = () => {
           </PrivateRoute>
           <PrivateRoute path="/adminList">
             <AdminList></AdminList>
+          </PrivateRoute>
+          <PrivateRoute path="/ServiceList">
+            <ServiceList></ServiceList>
           </PrivateRoute>
           <PrivateRoute path="/manageTutor">
             <ManageTutor></ManageTutor>

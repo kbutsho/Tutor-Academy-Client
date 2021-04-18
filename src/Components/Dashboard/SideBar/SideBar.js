@@ -4,11 +4,12 @@ import { UserContext } from '../../../App';
 import logo from '../../../images/logo.png';
 import './SideBar.css';
 
+
 const SideBar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isAdmin, setIsAdmin] = useState(false);
     useEffect(() => {
-        fetch('http://localhost:5000/isAdmin', {
+        fetch('https://desolate-stream-31459.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })
@@ -35,7 +36,8 @@ const SideBar = () => {
                             <Link className="btn btn-danger w-75 my-1" to="/addTutor">Add Tutor</Link>
                             <Link className="btn btn-danger w-75 my-1" to="/makeAdmin">Make Admin</Link>
                             <Link className="btn btn-danger w-75 my-1" to="/adminList">Admin List</Link>
-                            <Link className="btn btn-danger w-75 my-1" to="/manageTutor">Manage Tutor</Link>
+                            <Link className="btn btn-danger w-75 my-1" to="/ServiceList">Service List</Link>
+                            {/* <Link className="btn btn-danger w-75 my-1" to="/manageTutor">Manage Tutor</Link> */}
                             <Link className="btn btn-danger w-75 my-1" to="/addReview">Add Review</Link>
                             <Link className="btn btn-danger w-75 my-1" to="/home" onClick={() => setLoggedInUser({})} >Log Out</Link>
                         </div> :

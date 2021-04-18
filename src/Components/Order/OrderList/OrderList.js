@@ -8,7 +8,7 @@ const OrderList = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/orders", {
+        fetch("https://desolate-stream-31459.herokuapp.com/orders", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -30,12 +30,12 @@ const OrderList = () => {
                         <thead>
                             <tr>
                                 <th className="text-secondary text-left" scope="col">No</th>
-                                <th className="text-secondary" scope="col">Hired TutorName</th>
+                                <th className="text-secondary" scope="col">Tutor Name</th>
                                 <th className="text-secondary" scope="col">Tutor Subject</th>
                                 <th className="text-secondary" scope="col">Tutor Salary</th>
                                 <th className="text-secondary" scope="col">Order Name</th>
-                                <th className="text-secondary" scope="col">Order Email</th>
                                 <th className="text-secondary" scope="col">Order Address</th>
+                                <th className="text-secondary" scope="col">Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -47,8 +47,15 @@ const OrderList = () => {
                                         <td>{order.hiredTutorSubject}</td>
                                         <td>{order.hiredTutorSalary}</td>
                                         <td>{order.UserName}KG</td>
-                                        <td>{order.email}</td>
                                         <td>{order.Address}</td>
+                                       <td>
+                                       <select className="form-control">
+                                            <option disabled={true} value="Not set">Status</option>
+                                            <option value="Pending">Pending</option>
+                                            <option value="On going">On going</option>
+                                            <option value="Done">Done</option>
+                                        </select>
+                                       </td>
                                     </tr>
                                 )
                             }

@@ -29,6 +29,15 @@ const LoginForm = () => {
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/" } };
 
+    // new addded
+    // const setUserToken = () => {
+    //     firebase.auth().currentUser.getIdToken(/* forceRefresh */ true).then(function(idToken) {
+    //       sessionStorage.setItem('token', idToken);
+    //     }).catch(function(error) {
+    //       // Handle error
+    //     });
+    //   }
+
     const handelGoogleSignIn = () => {
         firebase.auth().signInWithPopup(googleProvider)
             .then(result => {
@@ -38,10 +47,13 @@ const LoginForm = () => {
                     name: displayName,
                     email: email,
                     photo: photoURL
-                }
+                };
+                // new Added
+                
                 setUser(signInUser);
                 setLoggedInUser(signInUser);
                 history.replace(from);
+                // setUserToken();
             })
             .catch(err => {
 

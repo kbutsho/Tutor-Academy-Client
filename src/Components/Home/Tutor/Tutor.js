@@ -4,7 +4,7 @@ import TutorList from '../TutorList/TutorList';
 const Tutor = () => {
     const [tutors, setTutors] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/tutors")
+        fetch("https://desolate-stream-31459.herokuapp.com/tutors")
             .then(res => res.json())
             .then(data => setTutors(data))
     }, [])
