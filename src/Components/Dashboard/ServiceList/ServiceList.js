@@ -45,6 +45,7 @@ const ServiceList = () => {
                                 <th className="text-secondary" scope="col">Action</th>
                             </tr>
                         </thead>
+                       
                         <tbody>
                             {
                                 services.map((service, index) =>
