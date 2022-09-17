@@ -1,6 +1,6 @@
 .banner-area{
     height: 90vh;
-    /* background-image: url('https://www.aiub.edu/Files/Uploads/original/banner-3.jpg'); */
+    background-image: url('https://www.aiub.edu/Files/Uploads/original/banner-3.jpg');
     background-size: cover;
     background-color: black;
 }
