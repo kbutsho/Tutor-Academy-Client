@@ -10,11 +10,13 @@ const TutorList = ({ tutor }) => {
     const [props, set] = useSpring(() => ({ xys: [0, 0, 1] , config: config.default}))
 
     const history = useHistory();
+
     const handelClick = (tutorName) => {
         const url = `/hired/${tutorName}`;
         history.push(url);
     }
     return (
+ 
         <animated.div className="col-md-4" 
         onMouseMove={({clientX: x, clientY: y}) => (set({xys: calc(x, y)}))}
         onMouseLeave={() => set({xys:[0,0,1]})}

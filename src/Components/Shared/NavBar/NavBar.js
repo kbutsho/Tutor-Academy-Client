@@ -5,6 +5,7 @@ import logo from '../../../images/logo.png';
 
 const NavBar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    
     return (
         <div className="mb-5">
             <nav className="navbar navbar-expand-lg  navbar-light bg-info fixed-top">

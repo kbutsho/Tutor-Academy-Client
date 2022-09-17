@@ -15,7 +15,7 @@ const Review = () => {
             <h5 className="text-center customFont"> Reviews </h5>
             <div className="row container mx-auto">
                 {
-                    reviews.map(review => <ReviewList review={review}></ReviewList>)
+                    reviews.slice(0, 3).map(review => <ReviewList review={review}></ReviewList>)
                 }
             </div>
         </div>
